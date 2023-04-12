@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.ProfilFragment"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/profile_bar_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="kasimacikgoz4@gmail.com"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/siparis_bar_foreground"
+                    android:layout_marginEnd="10dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Siparişlerim / İadelerim"
+                    android:textSize="22sp"
+                    android:textColor="@color/purple_700"
+                    android:layout_marginTop="8dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ok_bar_foreground"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="5dp">
+                </ImageView>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kisi_bar_foreground"
+                android:layout_marginEnd="10dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcı Bilgilerim"
+                android:textSize="22sp"
+                android:textColor="@color/purple_700"
+                android:layout_marginTop="8dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ok_bar_foreground"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="5dp">
+            </ImageView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/konum_bar_foreground"
+                    android:layout_marginEnd="10dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adreslerim"
+                    android:textSize="22sp"
+                    android:textColor="@color/purple_700"
+                    android:layout_marginTop="8dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ok_bar_foreground"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="5dp">
+                </ImageView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kredi_bar_foreground"
+                    android:layout_marginEnd="10dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kartlarım"
+                    android:textSize="22sp"
+                    android:textColor="@color/purple_700"
+                    android:layout_marginTop="8dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ok_bar_foreground"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="5dp">
+                </ImageView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/exit_bar_foreground"
+                    android:layout_marginEnd="10dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Çıkış Yap"
+                    android:textSize="22sp"
+                    android:textColor="@color/purple_700"
+                    android:layout_marginTop="8dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ok_bar_foreground"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="5dp">
+                </ImageView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LCW Destek"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipwatsapp"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="272dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:text="Whatsapp Destek Hattı "
+        android:textAlignment="center"
+        android:textColorHint="#191717"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="#25D366"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipform"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:fontFamily="monospace"
+        android:text="İletişim Formu "
+        android:textAlignment="center"
+        android:textColorHint="#191717"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="#03A9F4" />
+
+</LinearLayout>

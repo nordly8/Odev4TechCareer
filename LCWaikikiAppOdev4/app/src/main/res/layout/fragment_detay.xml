@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.view.DetayFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUrunDetay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="ÜRÜN DETAYI" />
+
+
+    <ImageView
+        android:id="@+id/imageLcwResim"
+        android:layout_width="345dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ayakkabi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarUrunDetay" />
+
+
+    <TextView
+        android:id="@+id/twUrunAdi"
+        android:layout_width="237dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Bağcıklı File Detaylı Kadın Aktif Spor Ayakkabı"
+        android:textColor="#253A38"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLcwResim" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        tools:ignore="MissingConstraints"
+        android:background="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/twUrunAdi">
+
+
+    </View>
+
+    <TextView
+        android:id="@+id/twUrunFiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="279,99 ₺"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLcwResim" />
+
+    <ImageView
+        android:id="@+id/btnSepeteEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/sepete_ekle_resim"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarUrunDetay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/twUrunAdi" />
+
+    <TextView
+        android:id="@+id/twUrunRengi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="Beyaz"
+        android:textColor="#130B0B"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.706"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:visibility="invisible"
+        android:id="@+id/chipGrupNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/twUrunRengi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twUrunAdi">
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="38" >
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="39">
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="40">
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="41">
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="42">
+
+        </com.google.android.material.chip.Chip>
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGrupSize"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/twUrunRengi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twUrunAdi">
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="S" >
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="M">
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip8"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="L">
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip9"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="XL">
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip10"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:text="XXL">
+
+        </com.google.android.material.chip.Chip>
+    </com.google.android.material.chip.ChipGroup>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        tools:ignore="MissingConstraints"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/chipGrupNum">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Renk"
+        android:textColor="#253A38"
+        app:layout_constraintBottom_toTopOf="@+id/twUrunRengi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view2">
+
+    </TextView>
+    <TextView
+        android:id="@+id/textViewBeden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Beden"
+        app:layout_constraintBottom_toTopOf="@+id/chipGrupNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twUrunAdi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

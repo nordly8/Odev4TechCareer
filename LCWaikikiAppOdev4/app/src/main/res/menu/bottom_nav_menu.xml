@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/anasayfa"
+        android:title="LCW"
+        android:icon="@drawable/anasayfa_bar_foreground"
+        />
+    <item
+        android:id="@+id/kategori"
+        android:title="Kategoriler"
+        android:icon="@drawable/kategori_bar_foreground"/>
+    <item
+        android:id="@+id/shop"
+        android:title="Sepetim"
+        android:icon="@drawable/shop_bar_foreground"/>
+    <item
+        android:id="@+id/favorite"
+        android:title="Favoriler"
+        android:icon="@drawable/favorite_bar_foreground"/>
+    <item
+        android:id="@+id/person"
+        android:title="Profil"
+        android:icon="@drawable/person_bar_foreground"/>
+
+
+
+
+
+</menu>

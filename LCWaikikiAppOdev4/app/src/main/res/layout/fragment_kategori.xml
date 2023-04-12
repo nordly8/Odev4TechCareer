@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".ui.view.KategoriFragment"
+            android:orientation="vertical">
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="ERKEK"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp"
+                    android:layout_margin="2dp">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip2"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="KADIN"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp">
+
+                </com.google.android.material.chip.Chip>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip3"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="ÇOCUK ( 4 - 14 YAŞ)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp">
+
+                </com.google.android.material.chip.Chip>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip4"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="BEBEK ( 0 - 5 YAŞ)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip5"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="AYAKKABI"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip6"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="AKSESUAR"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip7"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="EV &amp; YAŞAM "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip8"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="ELSİVA "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip9"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="LCW 18 - 24 "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp"
+                    app:chipBackgroundColor="@android:color/holo_orange_light"    >
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip10"
+                    style="@style/Base.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="OUTLET "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:textStartPadding="2dp"
+                    app:chipBackgroundColor="@android:color/holo_red_dark">
+
+                </com.google.android.material.chip.Chip>
+
+
+
+
+        </LinearLayout>
+</ScrollView>
+
